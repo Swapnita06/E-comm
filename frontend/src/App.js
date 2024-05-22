@@ -5,6 +5,7 @@ import { BrowserRouter,Route,Routes } from 'react-router-dom'
 import Footer from './components/Footer';
 import Signup from './components/Signup';
 import PrivateComponent from './components/PrivateComponent';
+import Login from './components/Login';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
          </Route>
       
         <Route path='/signup' element={<Signup/>}/>
+        <Route path ='/login' element={<Login/>}/>      
       </Routes>
       
       </BrowserRouter>
