@@ -11,7 +11,7 @@ app.post("/register",async (req,resp)=>{
     let result= await user.save(); // Save the user in the database (kitchen)
     result = result.toObject();// Convert the result to a standard format that is plain javascript object
     delete result.password; // Remove the password before sending back to the customer
-       resp.send(result);// Send the response back to the customer
+       resp.send(result);// Send the response back to the customers
 })
 
 app.post("/login",async(req,resp)=>{
